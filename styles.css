@@ -1,0 +1,87 @@
+@import url('./reset.css');
+
+:root {
+  --main-color: #b07eec;
+  --sub-color: lightgrey;
+  --global-padding: 1rem;
+}
+
+body {
+  background-color: #e4e9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-list li {
+  margin-top: 1rem;
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+  grid-template-columns: min-content auto 1fr;
+  column-gap: 0.5rem;
+}
+
+#todo-list li span {
+  cursor: pointer;
+}
+
+#todo-list li::before {
+  content: '•';
+  color: var(--main-color);
+}
+
+.wrapper {
+  background-color: white;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  min-width: 50vw;
+}
+
+.wrapper header {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: var(--global-padding);
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper main {
+  padding: var(--global-padding);
+}
+
+.todo-button-container {
+  display: flex;
+  column-gap: 0.5rem;
+  justify-self: end;
+}
+
+.todo-update-button-container {
+  display: flex;
+  column-gap: 0.25rem;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+input[type='text'] {
+  outline: none;
+  border: none;
+}
+
+button {
+  border: 1px solid var(--sub-color);
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
