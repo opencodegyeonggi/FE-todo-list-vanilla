@@ -1,0 +1,85 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+.header{
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color:#db7ce7;
+    color:white;
+    font-weight: bold;
+}
+.todo-container {
+    width: 500px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-div{
+    display:flex;
+    align-items: center;
+}
+
+
+#todo-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+input:focus {
+    outline: none;  
+}
+
+button {
+    font-size:15px;
+    background-color:#ecadf5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+li::marker {
+    color: #ecadf5; 
+    padding:0;
+}
+
+
+.content-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 10px; */
+    padding:8px
+}
+
+.completed {
+    text-decoration: line-through; 
+    
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end; 
+    gap: 10px; 
+}
+
+.text-div:hover{
+    cursor:pointer
+}
+
+.edit-input {
+    width: 30%; 
+    border: none;
+    
+}
